@@ -1,0 +1,40 @@
+img {
+    display: block;
+    margin: auto;
+    margin-top: 200px;
+    -webkit-animation: scale-up-center 3s cubic-bezier(0.190, 1.000, 0.220, 1.000) both;
+    animation: scale-up-center 3s cubic-bezier(0.190, 1.000, 0.220, 1.000) both;
+}
+
+img:hover {
+    filter: brightness(1.5);
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.place {
+    font-size: 50px;
+    text-align: center;
+    -webkit-animation: scale-up-center 3s cubic-bezier(0.190, 1.000, 0.220, 1.000) both;
+    animation: scale-up-center 3s cubic-bezier(0.190, 1.000, 0.220, 1.000) both;
+}
