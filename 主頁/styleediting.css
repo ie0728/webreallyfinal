@@ -1,0 +1,120 @@
+/* header */
+
+body {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* 上方圖片預覽區（可點選換頁可自動換頁） */
+
+#carouselExampleIndicators {
+    position: relative;
+}
+
+.carousel-inner {
+    z-index: -1;
+}
+
+.w-100 {
+    width: 1055.45px !important;
+    height: 671.65px;
+    display: block;
+    margin: auto;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(img/arrow-left.png);
+}
+
+.carousel-control-next-icon {
+    background-image: url(img/arrow-right.png);
+}
+
+
+/* map */
+
+#mapicon {
+    position: relative;
+    height: 600px;
+    margin: 0px;
+    font-family: 'Noto Serif TC', serif;
+}
+
+#hoverimage {
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 540px;
+}
+
+#hoverimage:hover {
+    transform: scale(1.25);
+    transition: 1s;
+}
+
+#slogan {
+    float: left;
+    font-size: 55px;
+    color: rgb(107, 83, 48);
+    position: absolute;
+    top: 300px;
+    left: 15%;
+}
+
+.slogancontent {
+    float: left;
+    position: absolute;
+    top: 410px;
+    font-size: 20px;
+    left: 21%;
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width: 1024px) {
+    .w-100 {
+        max-width: 100%;
+        height: auto;
+    }
+    #hoverimage {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/* w/ mobile screen size */
+
+@media (max-width: 375px) {
+    .w-100 {
+        max-width: 100%;
+        height: auto;
+    }
+    #mapicon {
+        height: 400px;
+        display: block;
+        margin: auto;
+    }
+    #hoverimage {
+        max-width: 100%;
+        height: auto;
+    }
+    #slogan {
+        max-width: 100%;
+        margin-left: -20px;
+        top: 50px;
+        font-size: 40px;
+    }
+    .slogancontent {
+        width: 100%;
+        justify-content: center;
+        top: 150px;
+        font-size: 20px;
+        left: 2%;
+    }
+}
